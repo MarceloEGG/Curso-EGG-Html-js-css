@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >function calcularArea(){
+        let radio = document.getElementById("radio").value;
+        //console.log (typeof(radio));
+        let area = (Math.PI*Math.pow(radio,2));
+      
+        let resultado = document.getElementById("resultado");
+        resultado.textContent = "El area es de: " + area.toFixed(5);
+    let m=area*2;
+    
+    }
+    </script>
+    <p>Conocido el número en matemática PI π, pedir al usuario que ingrese el valor del radio
+        de una circunferencia y calcular y mostrar por pantalla el área y perímetro. Recuerde que
+        para calcular el área y el perímetro se utilizan las siguientes fórmulas:
+        area = PI * radio2
+        perimetro = 2 * PI * radio</p>
+        <input  id="radio" name="datoradio" required>
+        <button id="boton" onclick="calcularArea()">Respuesta</button>
+<h1 id="resultado"></h1>
+    </body>
+</html>

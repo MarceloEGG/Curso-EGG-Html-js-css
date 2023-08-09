@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio6</title>
+    
+</head>
+<body>
+    <script src="ejercicio5.js"></script>
+    <p>Construir un programa que simule un menú de opciones para realizar las cuatro
+        operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+        numéricos enteros. El usuario, además, debe especificar la operación con el primer
+        carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’
+        o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división.</p>
+        
+        <form onsubmit="event.preventDefault() " >
+            <label for="numero1">Número1:</label>
+            <input type="number" id="numero1" name="numero" required>
+            <label for="numero1">Número2:</label>
+            <input type="number" id="numero2" name="numero" required>
+            <br><br>
+            <input type="submit" value="sumar"   onclick="suma();"/>
+            <input type="submit" value="restar" onclick="resta();"/>
+            <input type="submit" value="dividir" onclick="divi();"/>
+            <input type="submit" value="multiplicar" onclick="multi();"/>
+        </form>
+   <h1 id = "resultado"></h1>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio15</title>
+</head>
+<body>
+    <script src="ejercicio15.js"></script>
+    <H1>Ejercicio 15</H1>
+    <p>Escribe un programa JavaScript para calcular el área y el perímetro de un objeto Círculo
+        con la propiedad radio. Nota: Cree dos métodos para calcular el área y el perímetro. El
+        radio del círculo lo proporcionará el usuario.</p>
+
+        <h2>Ingrese el radio del circulo</h2>
+        <form onsubmit="event.preventDefault() " ></form>
+        <input type="number" id="radio" name="radio" required>
+        <br><br>
+        
+        <button type= "submit" onclick="event.preventDefault(); calcularPerimetro()">Mostrar Perimetro</button>
+        <br><br>
+        <button type= "submit" onclick="event.preventDefault(); calcularArea()">Mostrar Area</button>
+<p><strong>Perimetro: <span id="perimetro"></span></strong> </p>
+<br><br>
+<p><strong>Area: <span id="Area"></span></strong> </p>
+
+
+    </body>
+</html>

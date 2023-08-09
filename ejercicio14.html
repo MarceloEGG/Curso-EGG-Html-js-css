@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libro</title>
+</head>
+<body>
+    <script src="ejercicio14.js"></script>
+    
+    <p>Crear un objeto libro que contenga las siguientes propiedades: ISBN, Título, Autor,
+        Número de páginas. Crear un método para cargar un libro pidiendo los datos al usuario
+        y luego informar mediante otro método el número de ISBN, el título, el autor del libro y el
+        numero de páginas.</p>
+        
+    <h1>Ingresar libro</h1>
+    <form onsubmit="event.preventDefault()">
+        <label for="ISBN">ISBN:</label>
+        <input type="number" id="ISBN" name="ISBN" required><br><br>
+        
+        <label for="Titulo">Título:</label>
+        <input type="text" id="titulo" name="Título" required><br><br>
+        
+        <label for="Autor">Autor:</label>
+        <input type="text" id="autor" name="Autor" required><br><br>
+        
+        <label for="numDpag">Número de páginas:</label>
+        <input type="number" id="numDpag" name="numDpag" required><br><br>
+        
+        <input type="submit" value="Guardar Libro" onclick="crearLibro()">
+        <button onclick="event.preventDefault(); mostrarLibro()">Mostrar Libro</button>
+    </form>
+
+    <h1>Datos del libro</h1>
+    <div >
+        <p><strong>ISBN:</strong> <span id="isbnSpan"></span></p>
+        <p><strong>Título:</strong> <span id="tituloSpan"></span></p>
+        <p><strong>Autor:</strong> <span id="autorSpan"></span></p>
+        <p><strong>Número de páginas:</strong> <span id="numDpagSpan"></span></p>
+    </div>
+
+
+</body>
+</html>
