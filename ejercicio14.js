@@ -1,7 +1,7 @@
 
         function crearLibro() {
             const libro = {
-                isbn: parseInt(document.getElementById("ISBN").value),
+                isbn: parseInt(document.getElementById("ISBN").value,
                 titulo: document.getElementById("titulo").value,
                 autor: document.getElementById("autor").value,
                 numDePag: parseInt(document.getElementById("numDpag").value),

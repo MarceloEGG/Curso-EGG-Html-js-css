@@ -1,4 +1,9 @@
-let prueba =document.getElementById("boton");
-let clima= document.getElementById("datoclima");
-let repuesta =h1.getElementById(clima2)
-  prueba.onclick = () => {respuesta.getElementById=clima}
+
+
+
+  //prueba.onclick = () => {respuesta.textContent=clima.textContent}
+function mostrarclima(){
+  
+  let clima= document.getElementById("datoclima");
+  document.getElementById("clima2").textContent = clima.value;
+}
