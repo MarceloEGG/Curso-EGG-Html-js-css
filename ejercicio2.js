@@ -8,3 +8,8 @@ function calcularArea(){
 let m=area*2;
 
 }
+
+/*bot.addEventListener('click',function fun() {
+
+    h1.textContent = h1.textContent.length 
+})*/
